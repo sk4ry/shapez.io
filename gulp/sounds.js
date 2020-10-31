@@ -114,7 +114,7 @@ function gulptasksSounds($, gulp, buildFolder) {
 
     gulp.task(
         "sounds.sfx",
-        gulp.series("sounds.sfxGenerateSprites", "sounds.sfxOptimize", "sounds.sfxCopyAtlas")
+        gulp.series("sounds.sfxGenerateSprites", "sounds.sfxOptimize")
     );
 
     gulp.task("sounds.copy", () => {
