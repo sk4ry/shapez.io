@@ -1,5 +1,8 @@
 const path = require("path");
 const audiosprite = require("gulp-audiosprite");
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+const ffmpeg = require('fluent-ffmpeg');
+ffmpeg.setFfmpegPath(ffmpegPath);
 
 function gulptasksSounds($, gulp, buildFolder) {
     // Gather some basic infos

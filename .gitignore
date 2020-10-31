@@ -42,7 +42,6 @@ node_modules/
 
 # Buildfiles
 build
-res_built
 
 gulp/runnable-texturepacker.jar
 tmp_standalone_files
