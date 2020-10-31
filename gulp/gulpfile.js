@@ -260,7 +260,7 @@ gulp.task("step.staging.all", gulp.series("step.staging.mainbuild", "css.prod", 
 gulp.task("build.staging", gulp.series("utils.cleanup", "step.staging.all", "step.postbuild"));
 
 // Builds everything (prod)
-gulp.task("step.prod.code", gulp.series("sounds.fullbuild", "translations.fullBuild", "js.prod"));
+gulp.task("step.prod.code", gulp.series("translations.fullBuild", "js.prod"));
 gulp.task(
     "step.prod.mainbuild",
     gulp.parallel("utils.copyAdditionalBuildFiles", "step.baseResources", "step.prod.code")
